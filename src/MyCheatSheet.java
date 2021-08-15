@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -212,8 +213,15 @@ public class MyCheatSheet {
 			System.out.println("Sum of money: " + sumOfMoney);
 			
 			// Print out current working directory.  This is useful when loading files. You want to know where the JVM expects the file to be.
-			String currentPath = new java.io.File(".").getCanonicalPath();
-                        System.out.println("Current dir:" + currentPath);
+			String currentPath;
+			try {
+				currentPath = new java.io.File(".").getCanonicalPath();
+                System.out.println("Current dir:" + currentPath);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
 			
 			
 		}	
