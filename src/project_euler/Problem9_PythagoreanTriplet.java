@@ -33,7 +33,7 @@ public class Problem9_PythagoreanTriplet {
 		
 		Solution sol = new Solution();
 		double sumOfTriplet = 1000;
-		System.out.println((int) sol.pythagoreanTripleProduct(sumOfTriplet));
+		System.out.println((long) sol.pythagoreanTripleProduct(sumOfTriplet));
 		
 	}
 }
