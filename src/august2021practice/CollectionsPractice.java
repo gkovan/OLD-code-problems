@@ -45,7 +45,7 @@ public class CollectionsPractice {
 			// Collection streams
 			System.out.println("COLLECTION STREAMS");
 			
-			myList.stream().forEach(x -> System.out.println(x));
+			myList.stream().forEach(x -> System.out.println("Collections stream: " + x));
 			
 			System.out.println("Filter all numbers > 0 in list.");
 			myList.stream().filter(x -> x > 0).forEach(x -> System.out.println(x));
